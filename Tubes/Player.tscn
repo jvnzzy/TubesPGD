@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Assets/Male_Spritesheet.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Male_Spritesheet.png" type="Texture2D" id=1]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -57,9 +57,9 @@ animations = [ {
 
 [node name="Node2D" type="Node2D"]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 frames = SubResource( 10 )
 frame = 2
 playing = true
