@@ -1,28 +1,29 @@
-[gd_resource type="AnimatedTexture" load_steps=9 format=3 uid="uid://djhxohmjyj8c"]
+[gd_resource type="AnimatedTexture" load_steps=9 format=2]
 
-[ext_resource type="Texture2D" uid="uid://cctl8r5fo3gp7" path="res://Assets/air/water_tileset1.png" id="1_8gwth"]
-[ext_resource type="Texture2D" uid="uid://b3gy7b500aogy" path="res://Assets/air/water_tileset2.png" id="2_hgp3c"]
-[ext_resource type="Texture2D" uid="uid://cssruu2oj6ksa" path="res://Assets/air/water_tileset3.png" id="3_cdg8x"]
-[ext_resource type="Texture2D" uid="uid://b4nhoejj7lnii" path="res://Assets/air/water_tileset4.png" id="4_5h5fu"]
-[ext_resource type="Texture2D" uid="uid://bwvn8cp8q20r7" path="res://Assets/air/water_tileset5.png" id="5_of0b7"]
-[ext_resource type="Texture2D" uid="uid://wmakvkcexah2" path="res://Assets/air/water_tileset6.png" id="6_ow7y8"]
-[ext_resource type="Texture2D" uid="uid://bjr3smlavk81x" path="res://Assets/air/water_tileset7.png" id="7_3vjq7"]
-[ext_resource type="Texture2D" uid="uid://dmns51b2efmmg" path="res://Assets/air/water_tileset8.png" id="8_d8ulb"]
+[ext_resource path="res://Assets/air/water_tileset7.png" type="Texture" id=1]
+[ext_resource path="res://Assets/air/water_tileset8.png" type="Texture" id=2]
+[ext_resource path="res://Assets/air/water_tileset1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/air/water_tileset3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/air/water_tileset4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/air/water_tileset5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/air/water_tileset6.png" type="Texture" id=7]
+[ext_resource path="res://Assets/air/water_tileset2.png" type="Texture" id=8]
 
 [resource]
+flags = 4
 frames = 8
-frame_0/texture = ExtResource("1_8gwth")
-frame_1/texture = ExtResource("2_hgp3c")
-frame_1/duration = 1.0
-frame_2/texture = ExtResource("3_cdg8x")
-frame_2/duration = 1.0
-frame_3/texture = ExtResource("4_5h5fu")
-frame_3/duration = 1.0
-frame_4/texture = ExtResource("5_of0b7")
-frame_4/duration = 1.0
-frame_5/texture = ExtResource("6_ow7y8")
-frame_5/duration = 1.0
-frame_6/texture = ExtResource("7_3vjq7")
-frame_6/duration = 1.0
-frame_7/texture = ExtResource("8_d8ulb")
-frame_7/duration = 1.0
+frame_0/texture = ExtResource( 3 )
+frame_1/texture = ExtResource( 8 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 4 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 5 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 6 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 7 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 1 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 2 )
+frame_7/delay_sec = 0.0
