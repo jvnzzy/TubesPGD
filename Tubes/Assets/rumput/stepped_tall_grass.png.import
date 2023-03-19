@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stepped_tall_grass.png-b8f0b45454d675efc345a60a1e27dbd8.stex"
+path="res://.import/stepped_tall_grass.png-91655d0d6403a1313055e5e4796bd10a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Grass/stepped_tall_grass.png"
-dest_files=[ "res://.import/stepped_tall_grass.png-b8f0b45454d675efc345a60a1e27dbd8.stex" ]
+source_file="res://Assets/rumput/stepped_tall_grass.png"
+dest_files=[ "res://.import/stepped_tall_grass.png-91655d0d6403a1313055e5e4796bd10a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
