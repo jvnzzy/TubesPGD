@@ -295,74 +295,73 @@ tile_data = PoolIntArray( -65536, 5, 131072, -65535, 5, 0, -65534, 5, 131072, -6
 
 [node name="Bunga" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 272, 459 )
-frame = 2
+frame = 0
 
 [node name="Bunga2" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 320, 459 )
-frame = 1
 
 [node name="Bunga4" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 272, 476 )
+frame = 2
 
 [node name="Bunga5" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 321, 445 )
-frame = 1
 
 [node name="Bunga12" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 465, 476 )
-frame = 2
+frame = 0
 
 [node name="Bunga11" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 464, 462 )
-frame = 1
 
 [node name="Bunga9" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 417, 474 )
-frame = 2
+frame = 0
 
 [node name="Bunga8" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 417, 458 )
-frame = 1
 
 [node name="Bunga7" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 418, 445 )
-frame = 0
+frame = 3
 
 [node name="Bunga6" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 369, 476 )
+frame = 2
 
 [node name="Bunga13" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 369, 459 )
-frame = 1
 
 [node name="Bunga14" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 370, 445 )
+frame = 2
 
 [node name="Bunga15" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 321, 476 )
-frame = 2
+frame = 0
 
 [node name="Bunga16" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 273, 445 )
-frame = 1
 
 [node name="Bunga17" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 463, 446 )
-frame = 0
+frame = 3
 
 [node name="Bunga18" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 481, 97 )
-frame = 0
+frame = 3
 
 [node name="Bunga19" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 493, 110 )
-frame = 0
+frame = 3
 
 [node name="Bunga20" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 599, 100 )
+frame = 2
 
 [node name="Bunga21" parent="Bunga" instance=ExtResource( 9 )]
 position = Vector2( 617, 111 )
+frame = 2
 
 [node name="Rumput" type="Node2D" parent="."]
 
@@ -633,27 +632,22 @@ position = Vector2( 433, 478 )
 [node name="Monster" type="Node2D" parent="."]
 
 [node name="NagaKicik" parent="Monster" instance=ExtResource( 16 )]
-position = Vector2( 528, 128 )
+position = Vector2( 42, 441 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Wraith" parent="Monster" instance=ExtResource( 14 )]
-position = Vector2( 104, 504 )
+position = Vector2( 938, 362 )
 
 [node name="Demon" parent="Monster" instance=ExtResource( 17 )]
-position = Vector2( 35, 476 )
+position = Vector2( 856, 337 )
 
 [node name="Lizard" parent="Monster" instance=ExtResource( 15 )]
-position = Vector2( 27, 420 )
+position = Vector2( 61, 443 )
 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="KinematicBody2D" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 497, 143 )
-
-[node name="Decor" type="Node2D" parent="YSort"]
-
-[node name="Pohon1" parent="YSort/Decor" instance=ExtResource( 11 )]
-position = Vector2( 453, 198 )
 
 [node name="Batu" type="Node2D" parent="YSort"]
 
@@ -1044,3 +1038,8 @@ position = Vector2( 516, 23 )
 [node name="Node2D" parent="." instance=ExtResource( 18 )]
 position = Vector2( 440, 80 )
 scale = Vector2( 0.8, 0.8 )
+
+[node name="Decor" type="Node2D" parent="."]
+
+[node name="Pohon1" parent="Decor" instance=ExtResource( 11 )]
+position = Vector2( 453, 198 )
