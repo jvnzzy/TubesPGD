@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_04_-_The_weekly_fair.mp3-8814598550a58a0534c86dafa5f53e23.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/Komiku_-_04_-_The_weekly_fair.mp3"
+dest_files=[ "res://.import/Komiku_-_04_-_The_weekly_fair.mp3-8814598550a58a0534c86dafa5f53e23.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

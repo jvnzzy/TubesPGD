@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BossBattle_0073_BPM110_Cm_Hydra-and-Ash_L.mp3-1ef80678213f807a819b9042e7cf7a30.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/BossBattle_0073_BPM110_Cm_Hydra-and-Ash_L.mp3"
+dest_files=[ "res://.import/BossBattle_0073_BPM110_Cm_Hydra-and-Ash_L.mp3-1ef80678213f807a819b9042e7cf7a30.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
