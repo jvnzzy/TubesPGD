@@ -12,6 +12,7 @@ func _ready():
 
 
 func _on_Ball_body_entered(body):
-	ball = ball+int(rand_range(1,10))
+	ball = ball+1
 	$AnimationPlayer.play("hilg")
 	print(ball)
+	

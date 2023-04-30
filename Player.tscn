@@ -308,3 +308,7 @@ limit_left = 0
 limit_top = 0
 limit_right = 1080
 limit_bottom = 599
+
+[node name="DoorCast2D" type="RayCast2D" parent="."]
+collide_with_areas = true
+collide_with_bodies = false
