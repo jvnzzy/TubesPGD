@@ -1,4 +1,4 @@
-extends Area2D
+extends AnimatedSprite
 
 var nama = "naga kicik"
 var level = int(11)
@@ -15,9 +15,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_NagaKicik_body_entered(body):
-	print("player")
-	get_tree().change_scene("res://BattleScene.tscn")
-	
