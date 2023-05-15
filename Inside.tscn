@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/rumah/pallet town/rival_home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/rumah/pallet town/mat.png" type="Texture" id=2]
@@ -18,6 +18,15 @@ extents = Vector2( 31, 11 )
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 14.5, 14.5 )
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 56.5, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 72 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 103.5, 10 )
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.5, 7.5 )
 
@@ -29,8 +38,8 @@ __meta__ = {
 }
 
 [node name="Hitam" type="Sprite" parent="."]
-position = Vector2( 257, 150 )
-scale = Vector2( 0.397656, 0.413889 )
+position = Vector2( 343.25, 168 )
+scale = Vector2( 0.532422, 0.463889 )
 texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -55,6 +64,22 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 345.5, 52.5 )
 shape = SubResource( 5 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 273.5, 47 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 144, 99 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 372, 99 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 258.5, 181 )
+shape = SubResource( 8 )
 
 [node name="Mat" type="Sprite" parent="."]
 position = Vector2( 266, 163 )

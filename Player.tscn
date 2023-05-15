@@ -285,7 +285,6 @@ tracks/0/keys = {
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 collision_layer = 2
-collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -297,7 +296,7 @@ vframes = 3
 frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8, 13 )
+position = Vector2( 8, 12 )
 shape = SubResource( 38 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -320,6 +319,7 @@ parameters/Idle/blend_position = Vector2( 0.0158478, 0.310345 )
 parameters/Walk/blend_position = Vector2( -0.508716, 0.0948277 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, 1 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 limit_left = 0

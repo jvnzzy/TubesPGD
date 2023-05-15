@@ -5,13 +5,12 @@ export var speed = 80.0
 var house = null setget set_house
 
 func set_house(new_house):
-	if new_house != null:
-		$KeyPrompt.show()
-		$Prompt.play("KeyPrompt")
-	else:
+	if new_house == null:
 		$KeyPrompt.hide()
 		$Prompt.stop()
-		
+	else:
+		$KeyPrompt.show()
+		$Prompt.play("KeyPrompt")
 	house = new_house
 	
 func _ready():
@@ -19,6 +18,7 @@ func _ready():
 	
 func _unhandled_input(event):
 	if event is InputEventKey and event.is_action_pressed("interact") and house != null:
+		Global.player_pos = global_position
 		house.enter()
 
 func _physics_process(delta):
