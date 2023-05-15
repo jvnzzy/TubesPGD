@@ -321,7 +321,7 @@ parameters/Walk/blend_position = Vector2( -0.508716, 0.0948277 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, 1 )
 current = true
-zoom = Vector2( 0.5, 0.5 )
+zoom = Vector2( 0.3, 0.3 )
 limit_left = 0
 limit_top = 0
 limit_right = 1080
