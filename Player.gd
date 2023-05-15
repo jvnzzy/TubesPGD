@@ -2,6 +2,25 @@ extends KinematicBody2D
 
 export var speed = 80.0
 
+var house = null setget set_house
+
+func set_house(new_house):
+	if new_house != null:
+		$KeyPrompt.show()
+		$Prompt.play("KeyPrompt")
+	else:
+		$KeyPrompt.hide()
+		$Prompt.stop()
+		
+	house = new_house
+	
+func _ready():
+	set_house(null)
+	
+func _unhandled_input(event):
+	if event is InputEventKey and event.is_action_pressed("interact") and house != null:
+		house.enter()
+
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("kanan"):

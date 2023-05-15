@@ -1,10 +1,11 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Assets/player/Male_Spritesheet.png" type="Texture" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Assets/tile/E-Key.png" type="Texture" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 8 )
+[sub_resource type="CircleShape2D" id=38]
+radius = 6.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -267,7 +268,24 @@ start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=24]
 
+[sub_resource type="Animation" id=39]
+resource_name = "KeyPrompt"
+tracks/0/type = "value"
+tracks/0/path = NodePath("KeyPrompt:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 3 ) ]
+}
+
 [node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -279,8 +297,8 @@ vframes = 3
 frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8, 8 )
-shape = SubResource( 1 )
+position = Vector2( 8, 13 )
+shape = SubResource( 38 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
@@ -308,3 +326,12 @@ limit_left = 0
 limit_top = 0
 limit_right = 1080
 limit_bottom = 599
+
+[node name="KeyPrompt" type="Sprite" parent="."]
+position = Vector2( 8, -6 )
+scale = Vector2( 0.3125, 0.34375 )
+texture = ExtResource( 3 )
+hframes = 2
+
+[node name="Prompt" type="AnimationPlayer" parent="."]
+anims/KeyPrompt = SubResource( 39 )

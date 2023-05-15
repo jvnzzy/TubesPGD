@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/rumah/pallet town/rival_home.png" type="Texture" id=1]
+[ext_resource path="res://Assets/rumah/pallet town/mat.png" type="Texture" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/backgorund/hitam.jpg" type="Texture" id=4]
+[ext_resource path="res://Inside.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7.75, 12.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 31, 11 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 14.5, 14.5 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.5, 7.5 )
+
+[node name="Inside" type="Node2D"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 300.0 ],
+"_edit_vertical_guides_": [ 513.0, 513.0, 362.0 ]
+}
+
+[node name="Hitam" type="Sprite" parent="."]
+position = Vector2( 257, 150 )
+scale = Vector2( 0.397656, 0.413889 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 154, 27 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 266, 107.5 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 242.25, 53.5 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 186, 56 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 345.5, 52.5 )
+shape = SubResource( 5 )
+
+[node name="Mat" type="Sprite" parent="."]
+position = Vector2( 266, 163 )
+texture = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, 1 )
+limit_left = 0
+limit_top = 0
+limit_right = 513
+limit_bottom = 300
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 256, 150 )
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2( 126, 74 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+position = Vector2( 140.5, 89 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
+[connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]
